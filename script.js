@@ -95,3 +95,5 @@ startButton.addEventListener('click', newGame)
 
 resetGame()
 updateStats()
+
+console.log('Updated')
