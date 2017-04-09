@@ -1,0 +1,76 @@
+@import "_variables.scss";
+
+body {
+  margin: $zero;
+  background-color: $primary-color;
+  color: $primary-color-2;
+}
+
+table.menu {
+  position: absolute;
+  top: $zero;
+  left: $zero;
+  border-top: $zero;
+  border-left: $zero;
+  border-right: $base-border-size solid $color-variation-2;
+  border-bottom: $base-border-size solid $color-variation-2;
+  border-bottom-right-radius: $base-border-radius * 6;
+  background-color: $color-variation-3;
+  box-shadow: $color-variation-4 $zero $base-border-size * 15;
+  font-family: $base-font-family;
+}
+
+table.menu h1 {
+  margin: $zero $zero + 10;
+  font-size: $base-font-size;
+}
+
+table.menu td {
+  text-align: center;
+}
+
+table.menu button {
+  width: $base-object-width;
+  background-color: $color-variation-1;
+  color: $color-variation-5;
+  text-align: center;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-size: $base-font-size + 2;
+  border: $base-border-size solid $color-variation-2;
+  transition: width $base-transition, background-color $base-transition;
+  border-radius: $base-box-radius * 3;
+}
+
+table.menu button:hover {
+  cursor: pointer;
+  background-color: $color-variation-6;
+  width: $base-object-width + 5;
+  transition: width $base-trasition, background-color $base-trasition;
+}
+
+table.menu button:active,
+table.menu button:focus {
+  outline: none;
+}
+
+table.menu td.label {
+  width: $base-object-width;
+}
+
+table.menu td.label,
+table.menu td.result {
+  text-align: right;
+}
+
+.clicky {
+  position: absolute;
+  border-radius: $base-box-radius * 5;
+  background-color: $color-variation-7;
+  border: $base-border-size solid $color-variation-2;
+  box-shadow: $color-variation-4 $zero $base-border-size * 15;
+}
+
+.clicky:hover {
+  cursor: pointer;
+}
