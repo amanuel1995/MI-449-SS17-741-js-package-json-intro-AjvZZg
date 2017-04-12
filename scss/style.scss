@@ -2,7 +2,7 @@
 
 body {
   margin: $zero;
-  background-color: mix($primary-color, $base-color1, %10);
+  background-color: mix($primary-color, $color-variation-5, 10%);
   color: $primary-color-2;
 }
 
@@ -45,7 +45,7 @@ table.menu {
     cursor: pointer;
     background-color: $color-variation-6;
     width: $base-object-width + 5;
-    transition: width $base-trasition, background-color $base-trasition;
+    transition: width $base-transition, background-color $base-transition;
   }
 
   table.menu button:active,
